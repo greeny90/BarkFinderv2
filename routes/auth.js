@@ -28,7 +28,7 @@ app.use(Passport.session());
 const MongoClient = require("mongodb").MongoClient;
 const uri =
   process.env.MONGO_URL ||
-  "mongodb+srv://Kristina:test@cluster0.d0ey3.mongodb.net/db?retryWrites=true&w=majority";
+  "mongodb+srv://Ilovewebdev:Ilovewebdev@cluster0.wfhwe.mongodb.net/dogs?retryWrites=true&w=majority";
 
 Passport.use(
   new Strategy(
