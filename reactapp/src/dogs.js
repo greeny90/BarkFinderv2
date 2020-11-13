@@ -3,6 +3,8 @@ import Slider from "./Slider";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import dogimage from "./Images/buffer2.jpg";
+import Image from "react-bootstrap/Image";
+import { Container } from "react-bootstrap";
 
 function Dogs() {
   const [dogs, setDogs] = useState([]);
@@ -60,10 +62,13 @@ function Dogs() {
             <button type="button">Sign In</button>
           </Link>
         </div>
-        <img
-          src={dogimage}
-          alt="dog says thank you for waiting as the page loads"
-        />
+        <Container>
+          <Image
+            src={dogimage}
+            alt="dog says thank you for waiting as the page loads"
+            fluid
+          />
+        </Container>
       </div>
     );
   }
