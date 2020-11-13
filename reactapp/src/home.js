@@ -17,20 +17,19 @@ function Home() {
           <button type="button">Sign In</button>
         </Link>
       </div>
-      <Card className="text-center">
-        <section id="section1">
-          <div className="main">
-            <Card.Header bsPrefix="card-header">
-              Ready to meet your new best friend?
-              <br />
-              Join BarkFinder today!
-              <a class="scroll" href="#section2">
-                <span></span>Scroll
-              </a>
-            </Card.Header>
-          </div>
-        </section>
-      </Card>
+
+      <section id="section1">
+        <div className="main">
+          <header>
+            Ready to meet your new best friend?
+            <br />
+            Join BarkFinder today!
+            <a class="scroll" href="#section2">
+              <span></span>Scroll
+            </a>
+          </header>
+        </div>
+      </section>
       <section id="section2">
         <a className="scroll" href="#section1">
           <span></span>Scroll
