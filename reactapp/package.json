@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "mdbreact": "^4.27.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react": "^17.0.1",
