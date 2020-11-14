@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/home.css";
 import { Link } from "react-router-dom";
+import { Card, Container, Row, Header } from "react-bootstrap";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
           <button type="button">Sign In</button>
         </Link>
       </div>
+
       <section id="section1">
         <div className="main">
           <header>
@@ -42,6 +44,12 @@ function Home() {
           </p>
         </div>
       </section>
+      <Card className="text-center">
+        <Card.Footer>Contact us at dogmatching@gmail.com</Card.Footer>
+        <Card.Footer className="text-muted">
+          Copyright © 2020 Jennifer Chang and Katie Chong. All Rights Reserved
+        </Card.Footer>
+      </Card>
     </div>
   );
 }

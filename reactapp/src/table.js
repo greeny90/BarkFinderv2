@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useMemo } from "react";
 import "./css/table.css";
 import dogimage from "./Images/buffer.jpg";
-import { Container, Card, CardImg, CardBody, CardTitle } from "reactstrap";
+import { Container, Card } from "react-bootstrap";
 import TableContainer from "./TableContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SelectColumnFilter } from "./filters";
 import { Link } from "react-router-dom";
+import Image from "react-bootstrap/Image";
 
 const Table = () => {
   const [dogs, setDogs] = useState([]);
@@ -35,12 +36,12 @@ const Table = () => {
     return (
       <div>
         <Card style={{ width: "18rem", margin: "0 auto" }}>
-          <CardImg top src={picLink} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>
+          <Card.Img top src={picLink} alt="Card image cap" />
+          <Card.Body>
+            <Card.Title>
               <strong>{`${name}`} </strong>
-            </CardTitle>
-          </CardBody>
+            </Card.Title>
+          </Card.Body>
         </Card>
       </div>
     );
@@ -128,12 +129,13 @@ const Table = () => {
     );
   } else {
     return (
-      <div>
-        <img
+      <Container>
+        <Image
           src={dogimage}
           alt="dog says thank you for waiting as the page loads"
+          fluid
         />
-      </div>
+      </Container>
     );
   }
 };
