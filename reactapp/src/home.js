@@ -55,7 +55,7 @@ function Home() {
       <Card className="text-center">
         <Card.Footer>Contact us at dogmatching@gmail.com</Card.Footer>
         <Card.Footer className="text-muted">
-          Copyright © 2020 Jennifer Chang and Katie Chong. All Rights Reserved
+          Copyright © 2020 Jennifer Chang, Katie Chong, and Kristina Yin. All Rights Reserved
         </Card.Footer>
       </Card>
     </div>
