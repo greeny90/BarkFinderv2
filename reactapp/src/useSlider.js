@@ -11,8 +11,16 @@ const useSlider = (slideImage, slideText, images) => {
             rgba(34, 34, 34, 0.4),
             rgba(68, 68, 68, 0.4)
             ), url(${images[0].picLink})`;
-    const html = "Name: " + images[0].name + "<br>" + "Breed: " + images[0].breed + "<br>" + "Gender: " + images[0].gender;
-    slideText.current.innerHTML = html
+    const html =
+      "Name: " +
+      images[0].name +
+      "<br>" +
+      "Breed: " +
+      images[0].breed +
+      "<br>" +
+      "Gender: " +
+      images[0].gender;
+    slideText.current.innerHTML = html;
   };
 
   const handleSlide = (slide) => {
@@ -21,7 +29,15 @@ const useSlider = (slideImage, slideText, images) => {
             rgba(34, 34, 34, 0.4),
             rgba(68, 68, 68, 0.4)
           ), url(${images[slide - 1].picLink})`;
-    const html = "Name: " + images[slide - 1].name + "<br>" + "Breed: " + images[slide - 1].breed + "<br>" + "Gender: " + images[slide - 1].gender;
+    const html =
+      "Name: " +
+      images[slide - 1].name +
+      "<br>" +
+      "Breed: " +
+      images[slide - 1].breed +
+      "<br>" +
+      "Gender: " +
+      images[slide - 1].gender;
     slideText.current.innerHTML = html;
     animateSlide(slideImage);
   };
@@ -55,7 +71,15 @@ const useSlider = (slideImage, slideText, images) => {
           rgba(34, 34, 34, 0.4),
           rgba(68, 68, 68, 0.4)
           ),url(${images[slideCounter + 1].picLink})`;
-    const html = "Name: " + images[slideCounter + 1].name + "<br>" + "Breed: " + images[slideCounter + 1].breed + "<br>" + "Gender: " + images[slideCounter + 1].gender;
+    const html =
+      "Name: " +
+      images[slideCounter + 1].name +
+      "<br>" +
+      "Breed: " +
+      images[slideCounter + 1].breed +
+      "<br>" +
+      "Gender: " +
+      images[slideCounter + 1].gender;
     slideText.current.innerHTML = html;
     slideCounter++;
     animateSlide(slideImage);

@@ -1,7 +1,8 @@
 import React from "react";
 import "./css/home.css";
 import { Link } from "react-router-dom";
-import { Card, Container, Row, Header } from "react-bootstrap";
+import { Card} from "react-bootstrap";
+import ReactPlayer from "react-player";
 
 function Home() {
   return (
@@ -16,6 +17,13 @@ function Home() {
         <Link to="/signin">
           <button type="button">Sign In</button>
         </Link>
+        <ReactPlayer
+          url="https://raw.githubusercontent.com/jennch/misc/main/home.m4a"
+          width="400px"
+          height="50px"
+          playing={false}
+          controls={true}
+        />
       </div>
 
       <section id="section1">
