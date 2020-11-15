@@ -1,7 +1,8 @@
 import React from "react";
 import "./css/home.css";
 import { Link } from "react-router-dom";
-import { Card, Container, Row, Header } from "react-bootstrap";
+import { Card} from "react-bootstrap";
+import ReactPlayer from "react-player";
 
 function Home() {
   return (
@@ -16,6 +17,13 @@ function Home() {
         <Link to="/signin">
           <button type="button">Sign In</button>
         </Link>
+        <ReactPlayer
+          url="https://raw.githubusercontent.com/jennch/misc/main/home.m4a"
+          width="400px"
+          height="50px"
+          playing={false}
+          controls={true}
+        />
       </div>
 
       <section id="section1">
@@ -47,7 +55,7 @@ function Home() {
       <Card className="text-center">
         <Card.Footer>Contact us at dogmatching@gmail.com</Card.Footer>
         <Card.Footer className="text-muted">
-          Copyright © 2020 Jennifer Chang and Katie Chong. All Rights Reserved
+          Copyright © 2020 Jennifer Chang, Katie Chong, and Kristina Yin. All Rights Reserved
         </Card.Footer>
       </Card>
     </div>
