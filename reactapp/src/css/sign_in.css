@@ -3,6 +3,7 @@ body {
   margin: 0px;
 }
 
+
 .SignIn {
   background: url(../Images/sign_in.jpg) center center / cover no-repeat;
 }
@@ -18,6 +19,10 @@ body {
 
 .card-header {
   color: #3c240f;
+}
+
+#h3 {
+  font-size: 1.75rem; 
 }
 
 .card-body {
