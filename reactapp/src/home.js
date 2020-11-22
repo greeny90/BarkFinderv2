@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 function Home() {
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar" role="navigation">
         <Link to="/dogs">
           <button type="button">Dog Preview</button>
         </Link>
@@ -27,22 +27,21 @@ function Home() {
       </div>
 
       <section id="section1">
-        <div className="main">
-          <header>
+        <div className="main" role="banner">
+          <h1>
             Ready to meet your new best friend?
             <br />
             Join BarkFinder today!
             <a class="scroll" href="#section2">
               <span></span>Scroll
             </a>
-          </header>
+          </h1>
         </div>
       </section>
-      <section id="section2">
-        <a className="scroll" href="#section1">
-          <span></span>Scroll
-        </a>
-        <div className="main" id="second">
+      <section id="section2" >
+
+        
+        <div className="main" id="second" role="main">
           <header>How does it work?</header>
           <p>
             We take dogs from foster homes all over the Bay Area and bring them
@@ -52,9 +51,9 @@ function Home() {
           </p>
         </div>
       </section>
-      <Card className="text-center">
-        <Card.Footer>Contact us at dogmatching@gmail.com</Card.Footer>
-        <Card.Footer className="text-muted">
+      <Card className="text-center" role="contentinfo">
+        <Card.Footer className = "color-footer">Contact us at dogmatching@gmail.com</Card.Footer>
+        <Card.Footer className = "color-footer">
           Copyright © 2020 Jennifer Chang, Katie Chong, and Kristina Yin. All Rights Reserved
         </Card.Footer>
       </Card>
