@@ -8,12 +8,12 @@ function SignUp() {
   const error = urlParams.get("error");
 
   return (
-    <div>
+    <div role="main">
       <div className="SignUp">
         <div className="container-fluid d-flex justify-content-center">
           <div className="signcard">
             <div className="card-header">
-              <h3>Sign Up</h3>
+              <h1 id="h3">Sign Up</h1>
             </div>
             <div className="card-body">
               <form action="/auth/signup" method="POST">

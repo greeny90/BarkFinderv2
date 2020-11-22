@@ -7,18 +7,19 @@ function SignIn() {
   const urlParams = new URLSearchParams(window.location.search);
   const error = urlParams.get("error");
   return (
-    <div>
+    <div role="main">
       <div className="SignIn">
         <div className="container-fluid d-flex justify-content-center">
           <div className="signcard">
             <div className="card-header">
-              <h3>Sign In</h3>
+              <h1 id="h3">Sign In</h1>
             </div>
             <div className="card-body">
               <form action="/auth/signin" method="POST">
                 <div className="form-group">
                   <label for="inputUserName">Username</label>
                   <input
+                  aria-label="Username"
                     type="text"
                     id="username"
                     className="form-control"
@@ -29,6 +30,7 @@ function SignIn() {
                 <div className="form group">
                   <label for="inputPassword">Password</label>
                   <input
+                  aria-label="Password"
                     type="password"
                     id="password"
                     className="form-control"
@@ -41,6 +43,7 @@ function SignIn() {
 
                 <div className="form-group">
                   <input
+                  aria-label="Submit"
                     type="submit"
                     className="btn btn-dark"
                     style={{ marginTop: "10px" }}
