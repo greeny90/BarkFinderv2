@@ -17,9 +17,12 @@ body {
 }
 
 #h3 {
-  font-size: 1.75rem; 
+  font-size: 1.75rem;
 }
 
+.form-group {
+  background-color: whitesmoke;
+}
 .card-header {
   color: #3c240f;
 }
@@ -35,7 +38,7 @@ body {
 
 a {
   font-family: "Roboto", sans-serif;
-  color: brown;
+  color: #3c240f;
 }
 
 /**for mobile version make card thinner**/

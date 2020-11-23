@@ -19,7 +19,7 @@ function SignIn() {
                 <div className="form-group">
                   <label for="inputUserName">Username</label>
                   <input
-                  aria-label="Username"
+                    aria-label="Username"
                     type="text"
                     id="username"
                     className="form-control"
@@ -30,7 +30,7 @@ function SignIn() {
                 <div className="form group">
                   <label for="inputPassword">Password</label>
                   <input
-                  aria-label="Password"
+                    aria-label="Password"
                     type="password"
                     id="password"
                     className="form-control"
@@ -43,7 +43,7 @@ function SignIn() {
 
                 <div className="form-group">
                   <input
-                  aria-label="Submit"
+                    aria-label="Submit"
                     type="submit"
                     className="btn btn-dark"
                     style={{ marginTop: "10px" }}
@@ -53,10 +53,10 @@ function SignIn() {
               </form>
             </div>
             <div className="card-footer">
-              <div>
+              <div className="signup-link">
                 <Link to="/signup">Sign up here</Link>
               </div>
-              <div>
+              <div className="signup-link">
                 <Link to="/">Cancel and return home</Link>
               </div>
             </div>
