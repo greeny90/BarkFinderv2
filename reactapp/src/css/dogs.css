@@ -56,8 +56,7 @@ body {
 
 .slider__btn-right,
 .slider__btn-left {
-  background: transparent;
-  border: none;
+  background: #7d5d3b;
   outline: none;
   font-size: 2rem;
   font-color: white;
@@ -98,4 +97,10 @@ body {
 .loading {
   color: #3c240f;
   font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 1rem;
+  color: saddlebrown;
+  text-align: left;
 }

@@ -49,7 +49,7 @@ const TableContainer = ({ columns, data, renderRowSubComponent }) => {
               {headerGroup.headers.map((column) => (
                 <th {...column.getHeaderProps()}>
                   <div {...column.getSortByToggleProps()}>
-                    {column.render("Header")}
+                    <label htmlFor="Header">{column.render("Header")}</label>
                     {generateSortingIndicator(column)}
                   </div>
                   <Filter column={column} />
@@ -87,6 +87,7 @@ const TableContainer = ({ columns, data, renderRowSubComponent }) => {
       <Row style={{ maxWidth: 1000, margin: "0 auto", textAlign: "center" }}>
         <Col md={2}>
           <CustomInput
+            aria-label ="page"
             type="select"
             value={pageSize}
             onChange={onChangeInSelect}

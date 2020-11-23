@@ -15,8 +15,10 @@ body {
   font-size: 14px;
 }
 
+
 .card-header {
-  color: #3c240f;
+  background: whitesmoke;
+  color: black;
 }
 
 .card-body {
@@ -51,4 +53,15 @@ a {
 .buttons {
   padding: 5px;
   margin: 2px;
+}
+
+.dog-name{
+  background: whitesmoke;
+  color: #3c240f;
+}
+
+#header{
+  background: whitesmoke;
+  color: #3c240f;
+  font-size: 40px;
 }

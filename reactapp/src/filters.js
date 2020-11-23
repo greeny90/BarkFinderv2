@@ -1,5 +1,6 @@
 import React from "react";
 import { Input, CustomInput } from "reactstrap";
+import "./css/table.css";
 
 export const Filter = ({ column }) => {
   return (
@@ -39,7 +40,9 @@ export const SelectColumnFilter = ({
   }, [id, preFilteredRows]);
 
   return (
+
     <CustomInput
+      aria-label="id"
       id="custom-select"
       type="select"
       value={filterValue}

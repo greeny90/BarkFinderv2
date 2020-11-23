@@ -32,7 +32,7 @@ function Dogs() {
   if (loaded) {
     return (
       <div>
-        <div className="navbar">
+        <div className="navbar" role="navigation">
           <Link to="/">
             <button type="button">Home</button>
           </Link>
@@ -43,7 +43,7 @@ function Dogs() {
             <button type="button">Sign In</button>
           </Link>
         </div>
-        <div className="App">
+        <div className="App" role = "main">
           <Slider images={dogs} />
         </div>
       </div>
@@ -51,7 +51,7 @@ function Dogs() {
   } else {
     return (
       <div>
-        <div className="navbar">
+        <div className="navbar" role="navigation">
           <Link to="/">
             <button type="button">Home</button>
           </Link>
@@ -62,13 +62,16 @@ function Dogs() {
             <button type="button">Sign In</button>
           </Link>
         </div>
+        <main>
         <Container>
+          <h1 id="h2">Loading page</h1>
           <Image
             src={dogimage}
             alt="dog says thank you for waiting as the page loads"
             fluid
           />
         </Container>
+        </main>
       </div>
     );
   }

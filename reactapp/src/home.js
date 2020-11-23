@@ -28,7 +28,7 @@ function Home() {
 
       <section id="section1">
         <div className="main" role="banner">
-          <h1>
+          <h1 id = "header">
             Ready to meet your new best friend?
             <br />
             Join BarkFinder today!

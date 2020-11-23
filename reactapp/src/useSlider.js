@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const useSlider = (slideImage, slideText, images) => {
   let slideCounter = 0;
