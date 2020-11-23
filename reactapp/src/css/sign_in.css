@@ -3,7 +3,6 @@ body {
   margin: 0px;
 }
 
-
 .SignIn {
   background: url(../Images/sign_in.jpg) center center / cover no-repeat;
 }
@@ -22,9 +21,12 @@ body {
 }
 
 #h3 {
-  font-size: 1.75rem; 
+  font-size: 1.75rem;
 }
 
+label {
+  background-color: whitesmoke;
+}
 .card-body {
   color: #3c240f;
 }
@@ -34,9 +36,12 @@ body {
   height: 100vh;
 }
 
+.signup-link {
+  background-color: whitesmoke;
+}
+
 a {
   font-family: "Roboto", sans-serif;
-  color: brown;
 }
 
 /**for mobile version make card thinner**/

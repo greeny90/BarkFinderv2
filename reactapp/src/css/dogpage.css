@@ -15,7 +15,6 @@ body {
   font-size: 14px;
 }
 
-
 .card-header {
   background: whitesmoke;
   color: black;
@@ -32,7 +31,7 @@ body {
 
 a {
   font-family: "Roboto", sans-serif;
-  color: brown;
+  color: #3c240f;
 }
 
 /**for mobile version make card thinner**/
@@ -55,12 +54,12 @@ a {
   margin: 2px;
 }
 
-.dog-name{
+.dog-name {
   background: whitesmoke;
   color: #3c240f;
 }
 
-#header{
+#header {
   background: whitesmoke;
   color: #3c240f;
   font-size: 40px;
