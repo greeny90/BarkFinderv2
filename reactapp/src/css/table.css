@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow: auto;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: white;
 }
 
 .loading {
@@ -15,9 +15,9 @@ body {
 .button {
   margin: 2px;
   font-size: 20px;
-  color: white;
+  color: saddlebrown;
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-  background-color: #7d5d3b;
+  background-color: saddlebrown;
   border: 1px solid #54381e;
   cursor: pointer;
   font-size: 14px;
@@ -42,7 +42,7 @@ body {
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-  background-color: #7d5d3b;
+  background-color: #634b30;;
   border: 1px solid #54381e;
   cursor: pointer;
   font-size: 14px;
@@ -54,4 +54,9 @@ body {
 .button2:hover {
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
   background-color: #634b30;
+}
+
+.custom-select{
+  color:white;
+  background:#634b30;
 }

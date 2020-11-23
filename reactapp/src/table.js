@@ -59,6 +59,7 @@ const Table = () => {
         ),
       },
       {
+
         Header: "Breed",
         accessor: "breed",
         disableSortBy: true,
@@ -68,6 +69,7 @@ const Table = () => {
       {
         Header: "Name",
         accessor: "name",
+        Filter: SelectColumnFilter,
       },
       {
         Header: "Age",
@@ -98,44 +100,58 @@ const Table = () => {
   if (loaded) {
     return (
       <div>
-        <div className="buttons">
+        <body>
+        <div className="navbar" role="navigation">
           <Link to="/dogpage">
-            <button className="button2" type="button">
-              Send a 💖
-            </button>
+            <button type="button2"> Send a 💖</button>
           </Link>
           <Link to="/userprofile">
-            <button className="button2" type="button">
-              My Account
-            </button>
+            <button type="button2">My Account</button>
           </Link>
           <form className="form" action="/auth/signout" method="post">
-            <input
-              className="button"
-              type="submit"
-              name="signout"
-              value="Sign Out"
-            />
+            <button type="button2">Sign Out</button>
           </form>
         </div>
+        <main>
         <Container style={{ marginTop: 100 }}>
+          <h1>Help adopt one of these dogs!</h1>
           <TableContainer
             columns={columns}
             data={dogs}
             renderRowSubComponent={renderRowSubComponent}
           />
         </Container>
+        </main>
+        </body>
+
       </div>
+
     );
   } else {
     return (
-      <Container>
-        <Image
-          src={dogimage}
-          alt="dog says thank you for waiting as the page loads"
-          fluid
-        />
-      </Container>
+      <div>
+        <div className="navbar" role="navigation">
+          <Link to="/">
+            <button type="button2">Home</button>
+          </Link>
+          <Link to="/signup">
+            <button type="button2">Sign Up</button>
+          </Link>
+          <Link to="/signin">
+            <button type="button2">Sign In</button>
+          </Link>
+        </div>
+        <main>
+          <Container>
+            <h1>Loading page</h1>
+            <Image
+              src={dogimage}
+              alt="dog says thank you for waiting as the page loads"
+              fluid
+            />
+          </Container>
+        </main>
+      </div>
     );
   }
 };
