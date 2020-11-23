@@ -4,8 +4,8 @@ Authors: Jennifer Chang and Katie Chong <br/> <br/>
 Class Link: https://johnguerra.co/classes/webDevelopment_fall_2020/ <br/>
 Project 3 Objective: Improving Project 2 (BarkFinder) by implementing accessibility, design and usability concepts<br/> <br/>
 Screenshots: <br/>
-![ScreenShot](/screenshots/Screen Shot 2020-11-23 at 11.14.16 AM.png)
-![ScreenShot](/screenshots/Screen Shot 2020-11-23 at 11.14.26 AM.png)
+![ScreenShot](/screenshots/first.jpg)
+![ScreenShot](/screenshots/second.jpg)
 For more screenshots, reference the "Screenshots" folder in this repository.
 <br/> <br/>
 Instructions to build: <br/>
