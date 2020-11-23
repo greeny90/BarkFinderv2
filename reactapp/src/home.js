@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/home.css";
 import { Link } from "react-router-dom";
-import { Card} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
 function Home() {
@@ -28,7 +28,7 @@ function Home() {
 
       <section id="section1">
         <div className="main" role="banner">
-          <h1 id = "header">
+          <h1 id="header">
             Ready to meet your new best friend?
             <br />
             Join BarkFinder today!
@@ -38,9 +38,7 @@ function Home() {
           </h1>
         </div>
       </section>
-      <section id="section2" >
-
-        
+      <section id="section2">
         <div className="main" id="second" role="main">
           <header>How does it work?</header>
           <p>
@@ -52,9 +50,12 @@ function Home() {
         </div>
       </section>
       <Card className="text-center" role="contentinfo">
-        <Card.Footer className = "color-footer">Contact us at dogmatching@gmail.com</Card.Footer>
-        <Card.Footer className = "color-footer">
-          Copyright © 2020 Jennifer Chang, Katie Chong, and Kristina Yin. All Rights Reserved
+        <Card.Footer className="color-footer">
+          Contact us at dogmatching@gmail.com
+        </Card.Footer>
+        <Card.Footer className="color-footer">
+          Copyright © 2020 Jennifer Chang, Katie Chong, and Kristina Yin. All
+          Rights Reserved
         </Card.Footer>
       </Card>
     </div>
