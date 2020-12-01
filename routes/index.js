@@ -4,6 +4,8 @@ const myDB = require("../db/myMongoDB.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
 
+/* The routes look good. */
+
 router.get("/posts", async (req, res) => {
   await myDB.initialize();
   let posts = await myDB.getPosts();
