@@ -88,4 +88,6 @@ const useSlider = (slideImage, slideText, images) => {
   return { goToPreviousSlide, goToNextSlide };
 };
 
+/* The slider and animation look great. */
+
 export default useSlider;
